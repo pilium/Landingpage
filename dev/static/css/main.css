@@ -1,0 +1,225 @@
+@import '../libs/normalize/normalize.css';
+@import '../libs/magnific/magnific-popup.css';
+@import '../libs/bxslider/jquery.bxslider.css';
+@import '../libs/animate/animate.css';
+@import '../libs/slick/slick.css';
+@import '../libs/slick/slick-theme.css';
+.sprite {
+  background-image: url(../img/sprite/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-isle-of-man {
+  background-position: -10px -10px;
+  width: 64px;
+  height: 64px;
+}
+.sprite.sprite-male {
+  background-position: -94px -10px;
+  width: 64px;
+  height: 64px;
+}
+.sprite.sprite-man {
+  background-position: -10px -94px;
+  width: 64px;
+  height: 64px;
+}
+.sprite.sprite-man-user {
+  background-position: -94px -94px;
+  width: 64px;
+  height: 64px;
+}
+html {
+  font-size: 18px;
+  line-height: 1;
+}
+body {
+  font-family: mainFont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+textarea {
+  resize: none;
+}
+section {
+  position: relative;
+  margin-bottom: 20px;
+}
+button,
+input,
+select {
+  outline: none;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: ' ';
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.container {
+  position: relative;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo span {
+  background-image: linear-gradient(to left, #e077ff, #707aff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  font-family: "MuseoSansBlack", "Arial", sans-serif;
+  display: block;
+  text-transform: uppercase;
+}
+.logo span:last-child {
+  margin-bottom: 0;
+}
+section {
+  margin-bottom: 0;
+}
+h1 {
+  width: 100%;
+  margin-bottom: 100px;
+  color: #fff;
+  font-size: 2.667rem;
+  line-height: 70px;
+  font-family: "MuseoSansBlack", "Arial", sans-serif;
+  text-align: center;
+}
+.open-form__wrap {
+  position: relative;
+  width: 95%;
+  max-width: 380px;
+  height: 290px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 25px;
+}
+.g-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #999;
+}
+.g-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  border: 0;
+  background-color: #4a90e2;
+  box-shadow: 0 10px 30px rgba(2, 2, 2, 0.35);
+  background-image: linear-gradient(to left, #e077ff, #707aff);
+  cursor: pointer;
+}
+.open-form__success {
+  display: none;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+}
+.open-form__success::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  background: url('../img/sprite/pink-success.png') 0 0 no-repeat;
+}
+header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .container {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.main-nav__list li {
+  display: inline-block;
+  margin-right: 70px;
+  vertical-align: middle;
+}
+.main-nav__list a {
+  color: #fff;
+}
+.top-banner {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: url('../img/content/top-banner.jpg') 0 0 no-repeat;
+  background-size: cover;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
