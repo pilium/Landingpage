@@ -1,0 +1,67 @@
+.doing-descr {
+  display: block;
+  margin-bottom: 60px;
+  font-family: @mainfont;
+  font-size: 24px;
+  text-align: center;
+}
+// .doing-icons {
+//   display: -webkit-flex;
+//   display: -ms-flex;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+.doing-icons__item {
+  position: relative;
+  width: 17%;
+  padding-top: 140px;
+  margin-bottom: 70px;
+  font-size: 16px;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 40px;
+    right: -40px;
+    .sprite(@arrow);
+  }
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}
+.doing-icons__seo {
+  &::before {
+   .sprite(@-forma-1-2);
+ }
+}
+.doing-icons__shop {
+  &::before {
+   .sprite(@-forma-1-1);
+ }
+}
+.doing-icons__call {
+  &::before {
+   .sprite(@-shape-1);
+ }
+}
+.doing-icons__send {
+  &::before {
+   .sprite(@-shape-1-1);
+ }
+}
+.doing-icons__cash {
+  &::before {
+   .sprite(@-forma-1);
+ }
+}

@@ -1,3 +1,7 @@
+.gray-bg {
+  background-color: @grayColor;
+}
+
 .logo span {
   background-image: -webkit-linear-gradient(right, #e077ff, #707aff);
 	background-image: -moz-linear-gradient(right, #e077ff, #707aff);
@@ -6,7 +10,7 @@
 	background-image: linear-gradient(to left, #e077ff, #707aff);
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: @boldestfont;
   display: block;
   text-transform: uppercase;
@@ -20,11 +24,20 @@ section {
 h1 {
   width: 100%;
   margin-bottom: 100px;
+  padding: 0 5px;
   color: #fff;
   font-size: 2.667rem;
   line-height: 70px;
   font-family: @boldestfont;
   text-align: center;
+}
+.form-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 25px;
 }
 .open-form__wrap {
   position: relative;
@@ -67,12 +80,29 @@ h1 {
 	background-image: -ms-linear-gradient(right, #e077ff, #707aff);
 	background-image: linear-gradient(to left, #e077ff, #707aff);
   cursor: pointer;
+  &.g-btn--dark {
+    background: #463d73;
+  }
+}
+.section-title {
+  text-align: center;
+  font-family: @mainfont;
+  font-size: 32px;
+  &::after {
+    content: '';
+    display: block;
+    margin: 40px auto;
+    width: 80px;
+    height: 10px;
+    background-image: linear-gradient(to left, #e077ff, #707aff);
+    border-radius: 5px;
+  }
 }
 .open-form__banner {
-  // display: none;
+  display: block;
 }
 .open-form__success {
-   display: none;
+  display: none;
   text-align: center;
   color: #fff;
   line-height: 30px;
@@ -83,5 +113,28 @@ h1 {
     height: 120px;
     margin: 0 auto 20px;
     background: url('../img/sprite/pink-success.png') 0 0 no-repeat;
+  }
+}
+.success-text__mobile {
+  display: none;
+}
+.g-list {
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 30px;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 12px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #4A90E2;
+    }
   }
 }

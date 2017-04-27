@@ -4,3 +4,30 @@
 @import '../libs/animate/animate.css';
 @import '../libs/slick/slick.css';
 @import '../libs/slick/slick-theme.css';
+
+
+.review-slider {
+  .slick-dots {
+    bottom: -40px;
+    li {
+      &.slick-active {
+        button {
+          &::before {
+            font-size: 15px * 3.5;
+            color: #717aff;
+          }
+        }
+      }
+      button {
+        &::before {
+          font-size: 15px;
+        }
+        &:hover {
+          &::before {
+            color: #717aff;
+          }
+        }
+      }
+    }
+  }
+}

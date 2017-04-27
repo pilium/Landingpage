@@ -6,7 +6,7 @@ header
     left: 0;
 
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
 
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     .container
@@ -36,4 +36,56 @@ header
     {
         color: #fff;
     }
+    &.mobile-show {
+      right: -1.5%;
+      transition: all .3s linear;
+    }
+}
+.nav-mobile {
+  display: none;
+  width: 70px;
+  position: absolute;
+  right: -1.5%;
+  top: -20px;
+  bottom: -21px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .5s linear;
+  &.active {
+    background-color: #463d73;
+    transition: all .5s linear;
+    .nav-mobile__line--top{
+      top: 46%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all .5s linear
+    }
+    .nav-mobile__line--middle {
+      opacity: 0;
+    }
+    .nav-mobile__line--bottom {
+      top: 46%;
+      transform: translateY(-50%) rotate(-45deg);
+      transition: all .5s linear
+    }
+  }
+}
+.nav-mobile__line {
+  position: absolute;
+  left: 20px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+.nav-mobile__line--top{
+  top: 50px;
+  transition: all .5s linear
+}
+.nav-mobile__line--middle {
+  top: 60px;
+  transition: all .5s linear
+}
+.nav-mobile__line--bottom {
+  top: 70px;
+  transition: all .5s linear
 }

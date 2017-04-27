@@ -1,7 +1,7 @@
 
 @import '_libs.less';  // Подключаем стили библиотек
 @import '_vars.less';  // Подключаем переменные
-@import 'sprite.less';// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import '_sprite.less';// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
 // Подключаем миксины
 @import '_mixins.less';
 
@@ -14,6 +14,7 @@ html
 body
 {
     font-family: mainFont;
+    color: #333;
 }
 
 h1,
@@ -120,10 +121,18 @@ select
     max-width: 1200px;
     margin: 0 auto;
 }
+
 @import '_common.less';  // Общие стили
 @import 'modules/_header.less'; // Стили шапки
 @import 'modules/_menu.less'; // Стили меню
 @import 'page/_index.less';// Стили главной страницы
 @import "sections/top-banner.less";//Стили верхнего баннера
+@import "sections/about us.less"; // Стили для секции о нас
+@import "sections/doing.less"; // Стили для секции Чем вы будете заниматься
+@import "sections/price.less"; //Стили для секции Наши пакеты
+@import "sections/why.less"; //Стили для секции Почему снами выгодно сотрудничать
+@import "sections/review.less"; // Стиля для блока отзывов
+@import "sections/region.less"; // Стили для секции регион
+@import "sections/invite.less"; //Стили для формы присоединяйся к нашей
 @import 'modules/_footer.less';// Стили футера
 @import '_media.less';// Стили медиазапросов

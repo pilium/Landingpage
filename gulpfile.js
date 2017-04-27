@@ -79,43 +79,27 @@ gulp.task('scripts', function() {
 });
 
 
-// // Сборка спрайтов PNG
-// gulp.task('cleansprite', function() {
-//     return del.sync('dev/static/img/sprite/sprite.png');
-// });
-//
-// gulp.task( 'spritemade', function () {
-//         var spriteData = gulp.src( 'dev/static/img/sprite/*.*' )
-//         .pipe( spritesmith( {
-//             imgName: 'sprite.png',
-//             cssName: 'sprite.less',
-//             cssFormat: 'less',
-//             algoritm: 'binary-tree',
-//             cssTemplate: 'less.template.mustache'
-//         } ) );
-//         spriteData.img.pipe( gulp.dest( 'dev/static/img/sprite/' ) );
-//         spriteData.css.pipe( gulp.dest( 'dev/static/less/' ) );
-//     });
-//
-// // // gulp.task('spritemade', function() {
-// // //     var spriteData =
-// // //         gulp.src('dev/static/img/sprite/*.*')
-// // //         .pipe(spritesmith({
-// // //             imgName: 'sprite.png',
-// // //             cssName: '_sprite.less',
-// // //             padding: 15,
-// // //             cssFormat: 'less',
-// // //             algorithm: 'binary-tree',
-// // //             cssTemplate: 'less.template.mustache',
-// // //             cssVarMap: function(sprite) {
-// // //                 sprite.name = 's-' + sprite.name;
-// // //             }
-// // //         }));
-// //
-// //     spriteData.img.pipe(gulp.dest('dev/static/img/sprite/')); // путь, куда сохраняем картинку
-// //     spriteData.css.pipe(gulp.dest('dev/static/less/')); // путь, куда сохраняем стили
-// // });
-// gulp.task('sprite', ['cleansprite', 'spritemade']);
+// Сборка спрайтов PNG
+gulp.task('cleansprite', function() {
+    return del.sync('dev/static/img/sprite/sprite.png');
+});
+
+gulp.task('spritemade', function() {
+    var spriteData =
+        gulp.src('dev/static/img/sprite/*.*')
+        .pipe(spritesmith({
+            imgName: '../img/sprite/sprite.png',
+            cssName: '_sprite.less',
+            padding: 15,
+            cssFormat: 'less',
+            algorithm: 'binary-tree',
+
+        }));
+
+    spriteData.img.pipe(rename('sprite.png')).pipe(gulp.dest('dev/static/img/sprite/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('dev/static/less/')); // путь, куда сохраняем стили
+});
+gulp.task('sprite', ['cleansprite', 'spritemade']);
 
 // Слежение
 gulp.task('watch', ['browsersync', 'less', 'scripts'], function() {

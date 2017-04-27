@@ -16,10 +16,11 @@
         <div class="container">
           <div class="logo header__logo"><span>Партнерская сеть</span><span>по продаже</span><span>трендовых товаров</span></div>
           <nav class="main-nav">
+            <div class="nav-mobile"><span class="nav-mobile__line nav-mobile__line--top"></span><span class="nav-mobile__line nav-mobile__line--middle"></span><span class="nav-mobile__line nav-mobile__line--bottom"></span></div>
             <ul class="main-nav__list">
-              <li><a href="#">Чем вы будете заниматься</a></li>
-              <li><a href="#">Преимущества работы с нами </a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a class="scroll-link" href="#doing">Чем вы будете заниматься</a></li>
+              <li><a class="scroll-link" href="#why">Преимущества работы с нами </a></li>
+              <li><a class="scroll-link" href="#invite">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -32,9 +33,135 @@
             <input class="g-input" type="text" name="phone" placeholder="Телефон">
             <input class="g-btn" type="submit" value="Отправить заявку">
           </form>
-          <div class="open-form__success"><span>Спасибо за Вашу заявку!<br>Наш менеджер свяжется с Вами<br>в ближайшее время!</span></div>
+          <div class="open-form__success"><span class="success-text">Спасибо за Вашу заявку!<br>Наш менеджер свяжется с Вами<br>в ближайшее время!</span><span class="success-text__mobile">Спасибо за Вашу заявку!<br>Наш менеджер свяжется с Вами<br>в ближайшее время!</span></div>
         </div>
       </section>
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us__img"><img src="static/img/general/robot.png" alt="robot"></div>
+          <div class="about-us__text">
+            <p>Мы занимаемся поставкой и продажей трендовых товаров уже 5 лет. </p>
+            <p>Постоянно тестируем новые товары, выявляем тренды и поставляем их напрямую от поставщика.</p>
+            <p>Наши маркетологи разрабатывают и запускают сайты, настраивают рекламные каналы.</p>
+          </div>
+        </div>
+      </section>
+      <section class="doing" id="doing">
+        <div class="container">
+          <h2 class="section-title">Чем Вы будете заниматься</h2><span class="doing-descr">Вы будете продавать популярные товары через собственный интернет-магазин:</span>
+          <div class="doing-icons">
+            <div class="js-doing-icons">
+              <div class="doing-icons__item doing-icons__seo"><span>СЕО, контекстная реклама, социальные сети, Авито</span></div>
+              <div class="doing-icons__item doing-icons__shop"><span>Интернет-магазин</span></div>
+              <div class="doing-icons__item doing-icons__call"><span>Звонок-клиенту</span></div>
+              <div class="doing-icons__item doing-icons__send"><span>Определяете товар</span></div>
+              <div class="doing-icons__item doing-icons__cash"><span>Получаете деньги</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price gray-bg">
+        <div class="container">
+          <h2 class="section-title">Наши пакеты</h2>
+          <div class="price-slider">
+            <div class="price-slider-prev"></div>
+            <div class="price-slider-next"></div>
+            <div class="js-price__slider">
+              <div class="price-item"> 
+                <h3 class="price-item__title">Старт</h3>
+                <ul class="g-list">
+                  <li>Настройка и подключение сайт Landing page</li>
+                  <li>Обучение </li>
+                  <li>Первая партия товара на <b>20 000р.</b></li>
+                  <li>Подключение 1 канала рекламы<span class="price-list__descr"> Яндекс-директ</span></li>
+                </ul>
+                <div class="price-item__bottom"><span class="price-item__number">50 000 руб.</span><a class="g-btn" href="#">Отправить заявку</a></div>
+              </div>
+              <div class="price-item"> 
+                <h3 class="price-item__title">Стандарт</h3>
+                <ul class="g-list">
+                  <li>Настройка и подключение сайт Landing page</li>
+                  <li>Первая партия товара на <b>25 000р.</b></li>
+                  <li>Подключение 2 канала рекламы<span class="price-list__descr"> Яндекс-директ и Google Adwords</span></li>
+                  <li>Подключение новых трендовых товаров<b>со скидкой 30%</b></li>
+                  <li>Аккаунт-поддержка от нашего маркетингового агенства на первый месяц</li>
+                </ul>
+                <div class="price-item__bottom"><span class="price-item__number">75 000 руб.</span><a class="g-btn" href="#">Отправить заявку</a></div>
+              </div>
+              <div class="price-item"> 
+                <h3 class="price-item__title">Премиум</h3>
+                <ul class="g-list">
+                  <li>Настройка и подключение сайт Landing page</li>
+                  <li>Обучение </li>
+                  <li>Первая партия товара на <b>35 000р.</b></li>
+                  <li>Подключение 5 каналов рекламы<span class="price-list__descr"> Яндекс-дирирект, Google Adwords,таргетированная реклама в соц сетях, РСЯ, продвижение в Instagram</span></li>
+                  <li>Подключение новых трендовых товаров со скидкой 50%</li>
+                  <li>Аккаунт-поддержка от нашего маркетингового агенства на первый месяц</li>
+                </ul>
+                <div class="price-item__bottom"><span class="price-item__number">100 000 руб.</span><a class="g-btn" href="#">Отправить заявку            </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why" id="why">
+        <div class="container">
+          <h2 class="section-title">Почему с нами выгодно сотрудничать?</h2>
+          <div class="why_content">
+            <ul class="g-list">
+              <li><b>Сроки окупаемости</b>- учитывая минимальные вложения, Вы окупитесь за первый месяц</li>
+              <li><b>Возможность масштабирования</b>- вы будете продавать не только товар, который мы подключили Вам изначально, - мы постоянно тестируем новые товары, выявляем тренды, дальше у вас будет возможность постоянно подключать новые товары, которые будут появляться, таким образом, зарабатывать больше</li>
+              <li><b>Перспективные ниши</b>- мы продаем трендовый товар, на который уже есть спрос либо который набирает популярность</li>
+              <li>Предоставляем полное обучение по осуществлению продаж через интернет-магазин </li>
+              <li>Вы получаете свой бизнес, сами зарабатываете, мы не контролируем вашу выручку и не берем роялти</li>
+              <li><b>Быстрый старт</b>- на запуск сайта, рекламных каналов, закуп первой партии товара нужно 5 дней, - Вы сможете получать первые заявки уже на 6й день</li>
+              <li><b>Маркетинговая поддержка</b>- наши маркетологи настроят и адаптируют все рекламные каналы под Ваш регион и будут полностью сопровождать Ваш проект первый месяц</li>
+              <li>Мы сами занимаемся поставками товара от производителя, Вы будете получать товар по самым выгодным оптовым ценам</li>
+              <li>Высокомаржинальный товар</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="review gray-bg">
+        <div class="container">
+          <h2 class="section-title">Отзывы наших клиентов</h2>
+          <div class="review-slider">
+            <div class="review-slider__next"></div>
+            <div class="review-slider__prev"></div>
+            <div class="js-review__slider"></div>
+          </div>
+        </div>
+      </section>
+      <section class="region">
+        <div class="container"><img class="region-man__pic" src="static/img/general/man.png" alt="man">
+          <h2 class="section-title">Мы открываем одно представительство в регионе</h2>
+          <div class="open-form__wrap">
+            <form class="open-form open-form__banner"><span class="form-title">Проверьте,<br> свободен ли Ваш город?</span>
+              <input class="g-input" type="text" name="name" placeholder="Имя">
+              <input class="g-input" type="text" name="phone" placeholder="Телефон">
+              <input class="g-btn" type="submit" value="Отправить заявку">
+            </form>
+            <div class="open-form__success"><span class="form-title">Спасибу за Вашу заявку!</span><span>Спасибо за Вашу заявку!<br>Наш менеджер свяжется <br> с Вами в ближайшее время!</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="invite gray-bg" id="invite">
+        <div class="container">
+          <h2 class="section-title">Присоединяйся к нашей команде! </h2>
+          <form class="invite-form">
+            <input class="g-input" type="text" name="city" placeholder="Название города">
+            <input class="g-input" type="text" name="phone" placeholder="Телефон">
+            <input class="g-btn g-btn--dark" type="submit" value="Отправить заявку">
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container"><a class="popup-link footer-politic" href="#politic">Политика конфиденциальности</a><a class="footer-phone" href="tel: +74951242332">+7 (495) 124 23 32</a></div>
+    </footer>
+    <div class="popup mfp-hide" id="politic">
+      <h4 class="popup-title">Политика конфиденциальности </h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
